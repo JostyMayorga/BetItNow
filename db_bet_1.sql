@@ -426,11 +426,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `status_id`, `created`, `people_id`, `roles_id`) VALUES
-('rosty', ' $2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
+('rosty', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
 ', 1, 2),
-('ksantacr', '  $2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
+('ksantacr', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
 ', 2, 1),
-('champion', '  $2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
+('champion', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
 ', 3, 2);
 
 -- --------------------------------------------------------
