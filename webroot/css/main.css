@@ -1,0 +1,32 @@
+.panel {
+    background-color: #424242;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: limegreen;
+}
+
+.cuerpo-formulario {
+    background-color: #BDBDBD;
+    padding: 20px;
+    margin: -15px;
+    margin-top: -23px;
+}
+
+.pie-pagina {
+    background-color: #222;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+}
