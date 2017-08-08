@@ -113,3 +113,11 @@ tr:hover{
     color: yellow;
     
 }
+.historial tr:first-child{
+    background: #333;
+    color:white;
+    
+}
+.historial tr td,th{
+       padding: 1em;
+}
