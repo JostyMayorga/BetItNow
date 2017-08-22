@@ -23,9 +23,9 @@ CREATE TABLE `banks` (
 --
 
 INSERT INTO `banks` (`id`, `name`, `address`, `phone`) VALUES
-(1, 'Banco Pacifico', '', '222-333'),
-(2, 'Banco Guayaquil', '', '222-333'),
-(3, 'Banco Pichincha', '', '222-333');
+(1, 'Banco Pacifico','Victor Emilio Estrada 510', ' 2441681'),
+(2, 'Banco Guayaquil', 'José María Roura MZf 50 Villa 19 Guayaquil 090505', '1700800800'),
+(3, 'Banco Pichincha', ' MAPASINGUE OESTE NE AVENIDA 6TA Y CALLE 3ERA', '593981505302');
 
 -- --------------------------------------------------------
 
@@ -47,7 +47,8 @@ CREATE TABLE `bets` (
 
 INSERT INTO `bets` (`id`, `amount`, `users_id`, `matchs_id`, `teams_id`) VALUES
 (1, 100, 1, 1, 1),
-(2, 100, 2, 2, 2);
+(2, 150, 2, 2, 2),
+(3, 80, 3, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,8 @@ CREATE TABLE `channels` (
 
 INSERT INTO `channels` (`id`, `name`, `languages_id`, `matchs_id`) VALUES
 (1, 'Beyond the summit', 1, 1),
-(2, 'Beyond the summit', 1, 2);
+(2, 'Gamer studio', 1, 2),
+(3, 'Balbe', 2, 3);
 
 -- --------------------------------------------------------
 
@@ -112,9 +114,12 @@ CREATE TABLE `creditcards` (
 --
 
 INSERT INTO `creditcards` (`id`, `placeholder`, `credit_number`, `expiration_date`, `banks_id`) VALUES
-(1, 'Daniel Valencia', '1234567890001', 'Marzo - 2020', 1),
-(2, 'Kevin Santacruz', '1234567890002', 'Julio - 2025', 1),
-(3, 'Josty Mayorga', '1234567890003', 'Agosto - 2021', 2);
+(1, 'Daniel Valencia', '4099571361411691', '03/2020', 1),
+(2, 'Kevin Santacruz', '4502961182762615', '01/2019', 1),
+(3, 'Josty Mayorga', '4555243427875973', '02/2019', 2)
+(4, 'Mayiya Burgos', '4711632037692482', '11/2020', 2)
+(5, 'Marola Zapatier', '4505548764274130', '04/2018', 2
+(6, 'Mariuxi Escalante', '4560207732099788', '12/2019', 2);
 
 -- --------------------------------------------------------
 
@@ -177,7 +182,8 @@ CREATE TABLE `matchs` (
 
 INSERT INTO `matchs` (`id`, `date`, `first_team_id`, `second_team_id`, `result`, `round`, `tournaments_id`) VALUES
 (1, '09-07-2017', 1, 2, 1, 'Semifinal', 1),
-(2, '09-07-2017', 3, 4, 1, 'Semifinal', 1);
+(2, '09-07-2017', 3, 4, 1, 'Semifinal', 1),
+(3, '09-07-2017', 2, 1, 2, 'Final', 1;
 
 -- --------------------------------------------------------
 
