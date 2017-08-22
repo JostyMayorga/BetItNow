@@ -247,11 +247,12 @@ CREATE TABLE `people` (
 --
 
 INSERT INTO `people` (`id`, `name`, `lastName`, `identificationCard`, `age`, `mail`, `genders_id`, `phone`, `countries_id`) VALUES
-(1, 'Josty', 'Mayorga', '0985641235', 22, 'jmaayorga@hotmail.com', 1, '0997856322', 1),
+(1, 'Josty', 'Mayorga', '0951816768', 22, 'jgmayorg@hotmail.com', 1, '0986132426', 1),
 (2, 'kevin', 'Santacruz', '0999786112', 22, 'ksantacruz@hotmail.com', 1, '0998123689', 1),
 (3, 'Daniel', 'Valencia', '0984884030', 23, 'daniel-eve1@hotmail.com', 1, '0995720317', 1),
 (4, 'Paola', 'Ortiz', '0932145893', 21, 'portiz@hotmail.com', 2, '0986347951', 1),
-(5, 'Andrea', 'Jaramillo', '0981424512', 21, 'acjak@espol.edu.ec', 2, ' ', 1);
+(5, 'Andrea', 'Jaramillo', '0981424512', 21, 'acjak@espol.edu.ec', 2, '0965313246', 1),
+(6, 'Solange', 'Montoya', '0961575433', 20, 'solecito@espol.edu.ec', 2, '0965996246', 1);
 
 -- --------------------------------------------------------
 
@@ -272,7 +273,8 @@ CREATE TABLE `recharges` (
 
 INSERT INTO `recharges` (`id`, `wallets_id`, `date`, `amount`) VALUES
 (1, 1, '09-07-2017', 100),
-(2, 2, '09-07-2017', 100);
+(2, 2, '15-07-2017', 100),
+(3, 3, '22-07-2017', 100);
 
 -- --------------------------------------------------------
 
@@ -382,7 +384,7 @@ CREATE TABLE `tournaments` (
 --
 
 INSERT INTO `tournaments` (`id`, `sponsors_id`, `prizePool`, `type`, `organizer`, `name`, `startDate`, `endDate`, `location`) VALUES
-(1, 1, 175, 'Offline', 'Valve', 'DreamLeague Season 7', '08-07-2017', '08-08-2017', 'Ecuador');
+(1, 1, 175, 'Offline', 'Valve', 'DreamLeague Season 7', '23-08-2017', '28-08-2017', 'Ecuador');
 
 -- --------------------------------------------------------
 
@@ -425,13 +427,14 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`username`, `password`, `status_id`, `created`, `people_id`, `roles_id`) VALUES
-('rosty', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
-', 1, 2),
-('ksantacr', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
-', 2, 1),
-('champion', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14
-', 3, 2);
+INSERT INTO `users` (`id`, `username`, `password`, `status_id`, `accountCreationDate`, `people_id`, `roles_id`) VALUES
+(1, 'rosty', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '9-7-2017', 1, 1),
+(2, 'ksanta', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '9-7-2017', 2, 1),
+(3, 'champion', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '9-7-2017', 3, 1);
+(4, 'paola', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '22-8-2017', 4, 2),
+(5, 'andrea', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '22-8-2017', 5, 2),
+(6, 'solange', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '22-8-2017', 6, 2);
+
 
 -- --------------------------------------------------------
 
@@ -451,9 +454,9 @@ CREATE TABLE `wallets` (
 --
 
 INSERT INTO `wallets` (`id`, `users_id`, `amount`, `credit_card_id`) VALUES
-(1, 1, 100, 3),
-(2, 3, 100, 1),
-(3, 2, 100, 2);
+(1, 4, 100, 4),
+(2, 5, 100, 5),
+(3, 6, 100, 6);
 
 --
 -- Índices para tablas volcadas
