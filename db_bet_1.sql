@@ -183,7 +183,7 @@ CREATE TABLE `matchs` (
 INSERT INTO `matchs` (`id`, `date`, `first_team_id`, `second_team_id`, `result`, `round`, `tournaments_id`) VALUES
 (1, '09-07-2017', 1, 2, 1, 'Semifinal', 1),
 (2, '09-07-2017', 3, 4, 1, 'Semifinal', 1),
-(3, '09-07-2017', 2, 1, 2, 'Final', 1;
+(3, '09-07-2017', 2, 1, 2, 'Final', 1);
 
 -- --------------------------------------------------------
 
