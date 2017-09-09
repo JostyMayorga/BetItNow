@@ -116,9 +116,9 @@ CREATE TABLE `creditcards` (
 INSERT INTO `creditcards` (`id`, `placeholder`, `credit_number`, `expiration_date`, `banks_id`) VALUES
 (1, 'Daniel Valencia', '4099571361411691', '03/2020', 1),
 (2, 'Kevin Santacruz', '4502961182762615', '01/2019', 1),
-(3, 'Josty Mayorga', '4555243427875973', '02/2019', 2)
-(4, 'Mayiya Burgos', '4711632037692482', '11/2020', 2)
-(5, 'Marola Zapatier', '4505548764274130', '04/2018', 2
+(3, 'Josty Mayorga', '4555243427875973', '02/2019', 2),
+(4, 'Mayiya Burgos', '4711632037692482', '11/2020', 2),
+(5, 'Marola Zapatier', '4505548764274130', '04/2018', 2),
 (6, 'Mariuxi Escalante', '4560207732099788', '12/2019', 2);
 
 -- --------------------------------------------------------
