@@ -433,7 +433,9 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `status_id`, `accountCreationDate`, `people_id`, `roles_id`) VALUES
+
+
+INSERT INTO `users` (`id`, `username`, `password`, `status_id`, `created`, `people_id`, `roles_id`) VALUES
 (1, 'rosty', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14', 1, 1),
 (2, 'ksanta', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14', 2, 1),
 (3, 'champion', '$2y$10$DhG9u7tzulaNvM1SrpH0A.9W22H98EMSDcnnsdlW78sjbLA5Tgipq', 1, '2017-07-31 23:57:14', 3, 1),
